@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "hind";
+  src: url("../app/fonts/futura-medium.ttf");
+}
+
+@font-face {
+  font-family: "hind-bold";
+  src: url("../app/fonts/futura-bold.ttf");
+}
+
+@font-face {
+  font-family: "dmsans";
+  src: url("../app/fonts/dmsans-reg.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: #f7f7f7;
+  font-family: "dmsans", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+p,
+span {
+  font-family: "dmsans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  @apply max-lg:text-[14px];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "hind-bold", sans-serif;
+}
+
+a {
+  font-family: "dmsans", sans-serif;
+}
+
+.special-font {
+  font-family: "hind-bold", sans-serif;
+}
+
+.hero-bg {
+  transition: opacity 1s ease-in-out;
+}
+
+.services-bg {
+  background-image: url("../public/assets/images/services-bg.jpg");
+}
+
+.header-bg {
+  background-image: url("../public/assets/images/header-bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.header-bg-mobile {
+  background-image: url("../public/assets/images/header-bg-mob.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.section-bg {
+  background-image: url("../public/assets/images/tech_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.global-padding {
+  @apply px-[50px] max-md:px-[20px];
+}
+
+.flex-column {
+  @apply max-lg:flex-col max-lg:items-center max-lg:gap-5;
+}
+
+.mobile-center {
+  @apply max-md:text-center;
+}
+
+.nav-glass {
+  background: rgba(22, 22, 22, 0.856);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+}
+
+label {
+  display: none;
+}
+
+input {
+  width: 100%;
+}
